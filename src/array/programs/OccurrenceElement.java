@@ -14,7 +14,6 @@ public class OccurrenceElement {
 		}	
 		int count;
 		for(int j = 0; j<array.length; j++) {
-			//initial count
 			count = 0;
 			for(int k = 0; k<array.length; k++) {
 				
