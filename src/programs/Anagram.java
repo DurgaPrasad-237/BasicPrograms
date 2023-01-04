@@ -1,10 +1,7 @@
 package programs;
-
 import java.util.Arrays;
 import java.util.Scanner;
-
 public class Anagram {
-
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		System.out.println("enter the first word");
@@ -16,8 +13,5 @@ public class Anagram {
 		Arrays.sort(w1);
 		Arrays.sort(w2);
 		System.out.println(Arrays.equals(w1, w2));
-		
-
 	}
-
 }

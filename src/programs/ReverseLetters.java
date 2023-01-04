@@ -13,6 +13,6 @@ public class ReverseLetters {
 			}
 			System.out.print(" ");	
 		}
-		String c = "hello nani";	
+			
 	}
 }
