@@ -1,7 +1,6 @@
 package array.programs;
-import java.util.Arrays;
 import java.util.Scanner;
-public class OccurrenceElement {
+public class DuplicateElements {
 	public static void main(String[] args) {
 		Scanner input = new Scanner (System.in);
 		System.out.println("enter the size of the array");
@@ -12,6 +11,7 @@ public class OccurrenceElement {
 			array[i] = input.nextInt();
 		}	
 		int count;
+		System.out.println("the duplicate elements");
 		for(int j = 0; j<array.length; j++) {
 			count = 0;
 			for(int k = 0; k<array.length; k++) {
@@ -23,8 +23,7 @@ public class OccurrenceElement {
 				}	
 				}	
 			}
-			if(count>0 && array[j] != -1)
-			System.out.println(array[j]+" --- "+count);		}
-		
+			if(count>1 && array[j] != -1)
+			System.out.println(array[j]);		}	
 	}
 }
