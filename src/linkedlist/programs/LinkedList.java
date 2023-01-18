@@ -68,17 +68,34 @@ public class LinkedList {
 		}
 		sl.next = null;
 	}
+	public void insertafter(String key , String data) {
+		Node newnode = new Node(data);
+		if(key == head.data) {
+			newnode.next = head.next;
+			head.next = newnode;
+		}
+		Node cn = head;
+		while(cn.data != key) {
+			cn = cn.next;
+			if(cn == null) {
+				return;
+			}
+		}
+		newnode.next = cn.next;
+		cn.next = newnode;
+	}
 	public int size() {
 		return size;
 	}
 
 	public static void main(String[] args) {
 		LinkedList obj = new LinkedList();
-		obj.addFirst("this");
-		obj.addLast("is");
-		obj.addLast("me");
+		obj.addFirst("my");
+		obj.addLast("name");
+		obj.addLast("nani");
+		obj.insertafter("name", "is");
 		obj.printList();
-		obj.deleteFirst();
+	
 		System.out.println();
 		obj.printList();
 
