@@ -1,7 +1,4 @@
 package linkedlist.programs;
-
-import linkedlist.programs.LinkedList.Node;
-
 public class LL5 {
 	Node head;
 	int size;
@@ -42,11 +39,8 @@ public class LL5 {
 				x = x.next;
 				y = y.next;
 			}
-			x.next = y.next;
-			
-			
-		}
-		
+			x.next = y.next;	
+		}	
 	}
 	public void printList() {
 		if(head == null) {
@@ -60,7 +54,6 @@ public class LL5 {
 		}
 		System.out.print("null");
 	}
-
 	public static void main(String[] args) {
 		LL5 obj = new LL5();
 		obj.push("1");
@@ -69,14 +62,16 @@ public class LL5 {
 		obj.push("4");
 		obj.push("5");
 		obj.push("6");
+		obj.push("7");
+		obj.push("8");
+		obj.push("9");
+		obj.push("10");
+		System.out.println("before delete");
 		obj.printList();
-		obj.deleteelement("1");
 		System.out.println();
+		System.out.println("After delete");
+		obj.deleteelement("10");
 		obj.printList();
-		
-		
-		
-
 	}
 
 }
