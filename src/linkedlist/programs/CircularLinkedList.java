@@ -38,7 +38,6 @@ public class CircularLinkedList {
 			System.out.print(temp.next.data+"->");
 			temp = temp.next;
 		}
-		System.out.println(tail.next.data);
 	}
 	public static void main(String[] args) {
 		CircularLinkedList obj = new CircularLinkedList();
